@@ -14,6 +14,36 @@ describe('Array', function() {
 
 	});
 
+
+	describe('#reduce()', function() {
+	
+		it("should iterate an array from left to right concatenating initializing value, 'i', to subsequent array elements", function() {
+			var result = 
+				['a', 'b', 'c'].reduce(function(p, c, i, a){
+					return p + c;
+				}, 'i');
+
+			assert.equal("iabc", result);
+		});
+
+	});
+
+
+	describe('#reduceRight()', function() {
+
+		it("should iterate an array from right to left concatenating initializing value, 'i', to subsequent array elements", function() {
+			var result = 
+				['t','a','c'].reduceRight(function(p, c, i, a) {
+					return p + c;					
+				}, 'i');
+
+			assert.equal("icat", result);
+		});
+
+
+
+	});
+
 });
 
 
