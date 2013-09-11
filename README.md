@@ -1,11 +1,12 @@
-mocha.sandbox
+mocha
 =============
 # Tutorial found here:
 # http://visionmedia.github.io/mocha/
 
+$ cd mocha
 
 $ pwd
-/workspace/git/nodejs/mocha.sandbox
+.../nodejs.sandbox/mocha
 
 $ mocha
 
